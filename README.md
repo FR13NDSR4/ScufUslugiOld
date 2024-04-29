@@ -1,12 +1,11 @@
-# ScufUslugi
+Мой первый Пет-проект в котором я пытаюсь сделать копию сайта СКУФУСЛУГИ стилизованную под ГОСУСЛУГИ.
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
+
+```sh
+cd ScufUslugi
+```
 
 ```sh
 npm install
@@ -22,10 +21,4 @@ npm run dev
 
 ```sh
 npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
