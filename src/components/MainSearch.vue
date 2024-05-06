@@ -1,11 +1,19 @@
 <script setup>
+import TipSearchButton from '@/components/TipSearchButton.vue'
 
+const listTips = [
+  "Танки",
+  "Загранпаспорт",
+  "Лицевой счёт СКФ",
+  "Запись к КВД",
+  "Регистрация ТС"
+]
 </script>
 
 <template>
-  <div class="bg-blue-600 h-2/5 grid p-1">
+  <div class="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500 h-2/5 grid p-1">
     <div class="flex p-1 mt-5">
-      <button class="bg-opacity-70 bg-blue-500 ml-2 m-1 p-1 rounded-md text-white flex items-stretch text-left">
+      <button class="bg-opacity-70 bg-blue-500 ml-2 m-1 p-1 pt-2 rounded-md text-white flex items-stretch text-left">
         <img src="/elections.svg" alt="" class="ml-2" width="35" >
         Быть или не быть скуфом
         <img src="/arrow.svg" alt="" width="30">
@@ -26,11 +34,11 @@
       <img src="/plane.svg" alt="" width="30" class="absolute right-9 top-6" />
     </div>
     <div class="flex-wrap flex gap-3 mt-4 ml-3 mb-7">
-      <button class="p-2 rounded-tl rounded-r-2xl rounded-b-2xl bg-blue-700 px-4 text-white">Танки</button>
-      <button class="p-2 rounded-tl rounded-r-2xl rounded-b-2xl bg-blue-700 px-4 text-white">Загранпаспорт</button>
-      <button class="p-2 rounded-tl rounded-r-2xl rounded-b-2xl bg-blue-700 px-4 text-white">Лицевой счёт СКФ</button>
-      <button class="p-2 rounded-tl rounded-r-2xl rounded-b-2xl bg-blue-700 px-4 text-white">Запись к КВД</button>
-      <button class="p-2 rounded-tl rounded-r-2xl rounded-b-2xl bg-blue-700 px-4 text-white">Регистрация ТС</button>
+      <TipSearchButton
+        v-for="title in listTips"
+        :key="title"
+        :title="title"
+      />
     </div>
   </div>
 </template>
