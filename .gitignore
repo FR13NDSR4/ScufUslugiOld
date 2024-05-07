@@ -14,9 +14,6 @@ dist-ssr
 coverage
 *.local
 
-frustis.ru.crt
-frustis.ru.key
-
 /cypress/videos/
 /cypress/screenshots/
 
