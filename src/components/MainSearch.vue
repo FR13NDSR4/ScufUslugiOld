@@ -1,5 +1,6 @@
 <script setup>
 import TipSearchButton from '@/components/TipSearchButton.vue'
+import BigTipSearchList from '@/components/BigTipSearchList.vue'
 
 const listTips = [
   "Танки",
@@ -11,20 +12,9 @@ const listTips = [
 </script>
 
 <template>
-  <div class="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500 h-2/5 grid p-1">
-    <div class="flex p-1 mt-5">
-      <button class="bg-opacity-70 bg-blue-500 ml-2 m-1 p-1 pt-2 rounded-md text-white flex items-stretch text-left font-[Lato-Regular]">
-        <img src="/elections.svg" alt="" class="ml-2" width="35" >
-        Быть или не быть скуфом
-        <img src="/arrow.svg" alt="" width="30">
-      </button>
-      <button class="bg-opacity-70 bg-blue-500 m-1 p-2 rounded-md text-white flex items-stretch text-left font-[Lato-Regular]">
-        <img src="/flag.svg" alt="flag" class="mx-1">
-        Флаги в продаже
-        <img src="/arrow.svg" alt="" width="30">
-      </button>
-    </div>
-    <div class="relative">
+  <div class="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-500 pt-1 pb-1">
+    <BigTipSearchList/>
+    <div class="relative ml-1 mt-2">
       <img src="/robot.svg" alt="" width="35" class="absolute left-6 top-5" >
       <input
         type="text"
@@ -33,7 +23,7 @@ const listTips = [
       />
       <img src="/plane.svg" alt="" width="30" class="absolute right-9 top-6" />
     </div>
-    <div class="flex-wrap flex gap-3 mt-4 ml-3 mb-7">
+    <div class="flex-wrap flex gap-3 mt-4 ml-4 mb-7">
       <TipSearchButton
         v-for="title in listTips"
         :key="title"

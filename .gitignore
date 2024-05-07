@@ -13,6 +13,8 @@ dist
 dist-ssr
 coverage
 *.local
+robots.txt
+sitemap.xml
 
 /cypress/videos/
 /cypress/screenshots/

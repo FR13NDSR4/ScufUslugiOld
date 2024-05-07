@@ -5,8 +5,8 @@ defineProps({
 </script>
 
 <template>
-  <button
-    class="p-2 rounded-tl rounded-r-2xl rounded-b-2xl bg-blue-700 px-4 text-white font-[Lato-Regular]">
+  <div
+    class="cursor-pointer p-2 rounded-tl rounded-r-2xl rounded-b-2xl bg-blue-700 px-4 text-white font-[Lato-Regular]">
     {{ title }}
-  </button>
+  </div>
 </template>
