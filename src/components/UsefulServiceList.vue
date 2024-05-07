@@ -42,11 +42,11 @@
       <div class="grid">
         <div class="mt-4 rounded-2xl p-7 grid bg-gradient-to-r from-lime-800 via-lime-600 to-lime-500 cursor-pointer">
           <h1
-            class="text-2xl text-bold text-white text-left pr-4">
+            class="text-2xl text-bold text-white text-left pr-4 font-[Lato-Bold]">
             <b>Получите свою Альтушку</b>
           </h1>
           <p
-            class="text-white text-md mt-3 pr-4">
+            class="text-white text-md mt-3 pr-4 font-[Lato-Regular]">
             Заполните анкету и получите свою Альтушку
           </p>
         </div>
