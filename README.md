@@ -22,3 +22,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### or visit on this website
+### [frustis.ru](https://frustis.ru)
