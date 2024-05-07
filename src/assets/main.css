@@ -6,11 +6,11 @@
     @font-face {
         font-family: Lato-Bold;
         font-weight: 400;
-        src: url("public/fonts/Lato-Bold-v2.woff2") format("woff2");
+        src: url("./fonts/Lato-Bold-v2.woff2") format("woff2");
     }
     @font-face {
         font-family: Lato-Regular;
         font-weight: 500;
-        src: url("public/fonts/Lato-Regular-v2.woff2") format("woff2");
+        src: url("./fonts/Lato-Regular-v2.woff2") format("woff2");
     }
 }
