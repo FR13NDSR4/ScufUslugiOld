@@ -17,7 +17,7 @@
     {
       img: "/hand_braille.svg",
       title: "Скуфам с инвалидностью",
-      description: "Справки, образения, льготы, услуги для реабилитации",
+      description: "Справки, обращения, льготы, услуги для реабилитации",
       link: "#"
     },
     {
@@ -33,6 +33,14 @@
       link: "#"
     },
   ]
+
+  const openLink = () => {
+    const question = confirm("Пока мы разрабатываем данный сервис, свою первую альтушку вы можете получить в честном бою, хотите рискнуть?")
+    if (question) {
+      const dateLink = "https://tinder.com/ru"
+      window.open(dateLink, '_self')
+    }
+  }
 </script>
 
 <template>
@@ -40,7 +48,9 @@
     <div class="m-4">
       <h1 class="text-2xl"><b>Полезные сервисы</b></h1>
       <div class="grid">
-        <div class="mt-4 rounded-2xl p-7 grid bg-gradient-to-r from-lime-800 via-lime-600 to-lime-500 cursor-pointer">
+        <div
+          class="mt-4 rounded-2xl p-7 grid bg-gradient-to-r from-lime-800 via-lime-600 to-lime-500 cursor-pointer"
+          @click="openLink">
           <h1
             class="text-2xl text-bold text-white text-left pr-4 font-[Lato-Bold]">
             <b>Получите свою Альтушку</b>
